@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #1a1919 !important;
+}
+
+.header {
+  /* background-color: #262626; */
+  background-image: url("assets/img/header-background.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-title {
+  margin-left: 3%;
+  font-weight: 400;
+  font-size: 1.7rem;
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.nav-btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  margin-right: 3%;
+}
+
+.nav-btn i {
+  color: #f1f1f1;
+  font-size: 1.6rem;
+}
+
+.header-div {
+  position: absolute;
+  /* background-color: rgba(173, 255, 47, 0.3); */
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.header-title {
+  color: #f1f1f1;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.header-description {
+  color: #f2f2f2;
+  font-size: 1.3rem;
+}
+
+.main {
+  height: 100%;
+  margin: 50px auto 50px auto;
+}
+
+.card-col{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-card{
+    background-color: #262626 !important;
+    cursor: default;
+}
+
+.text-custom-color{
+    cursor: pointer;
+    color: #C58940;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.text-custom-color:hover{
+    color: #C58940;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-link{
+    margin: auto;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

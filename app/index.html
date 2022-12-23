@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <!-- Animate.style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>Blog</title>
+    </head>
+
+    <body>
+
+        <header id="header" class="header">
+            <nav class="navbar navbar-dark bg-transparent animate__fadeInDown">
+                <div class="container-fluid">
+                    <h1 class="nav-title">Murat Eren Nar</h1>
+                    <button class="nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-menu-dark">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-div text-center">
+                <h2 class="header-title">Blog Sayfama Hoş Geldiniz</h2>
+                <p class="header-description">Bu sayfada halihazırda geliştirmekte olduğum projelerin aşama aşama geliştirme günlüklerini paylaşacağım</p>
+            </div>
+        </header>
+
+        <main id="main" class="main">
+            <div class="container cards-div">
+                <!-- <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 d-flex card-col">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                     -->
+
+
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col-auto">
+                        <div class="card h-100 border-0 rounded-0 custom-card text-white">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
+                                class="card-img-top rounded-0 img-fluid" alt="...">
+                            <div class="card-body">
+                                <small class="text-custom-color">Lorem</small>
+                                <h5 class="card-title mt-3">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
+                                    maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
+                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
+                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <a class="float-end text-custom-color">Daha Falası İçin Tıkla...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="card h-100 border-0 rounded-0 custom-card text-white">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
+                                class="card-img-top rounded-0 img-fluid" alt="...">
+                            <div class="card-body">
+                                <small class="text-custom-color">Lorem</small>
+                                <h5 class="card-title mt-3">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
+                                    maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
+                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
+                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <a class="float-end text-custom-color">Daha Falası İçin Tıkla...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="card h-100 border-0 rounded-0 custom-card text-white">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
+                                class="card-img-top rounded-0 img-fluid" alt="...">
+                            <div class="card-body">
+                                <small class="text-custom-color">Lorem</small>
+                                <h5 class="card-title mt-3">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
+                                    maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
+                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
+                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <a class="float-end text-custom-color">Daha Falası İçin Tıkla...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-auto">
+                        <div class="card border-0 rounded-0 custom-card text-white">
+                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
+                                class="card-img-top rounded-0 img-fluid" alt="...">
+                            <div class="card-body">
+                                <small class="text-custom-color">Lorem</small>
+                                <h5 class="card-title mt-3">Card title</h5>
+                                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
+                                    maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
+                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
+                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                <small class="text-muted">Last updated 3 mins ago</small>
+                                <a class="float-end text-custom-color">Daha Falası İçin Tıkla...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+            </div>
+
+
+        </main>
+
+        <footer class="bg-dark text-light p-4 text-center footer">
+            <div class="social-link">
+                <a class="btn text-white" href=""><i class="fa-brands fa-github"></i></a>
+                <a class="btn text-white" href=""><i class="fa-solid fa-envelope"></i></a>
+                <a class="btn text-white" href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <p class="mt-3">&copy; 2022 Murat Eren Nar. Tüm Hakları Saklıdır </p>
+        </footer>
+
+        <!-- Bootstrap Bundle JS -->
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="script.js"></script>
+    </body>
+
+</html>
