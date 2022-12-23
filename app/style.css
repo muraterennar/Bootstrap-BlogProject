@@ -126,6 +126,8 @@ body {
   font-size: 1.1rem;
 }
 
+/* ========= Scrollbar Desing ========= */
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -140,4 +142,93 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #c58940;
+}
+
+/* ========= Responsive Desing ========= */
+@media (max-width: 768.98px) {
+  .nav-title {
+    font-size: 1.5rem;
+  }
+
+  .nav-btn i {
+    font-size: 1.8rem;
+  }
+
+  .header-div {
+    width: 65%;
+  }
+
+  .header-title {
+    font-size: 2rem;
+  }
+
+  .header-description {
+    font-size: 1rem;
+  }
+
+  .offcanvas {
+    width: 100%;
+    background-color: #262626 !important;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .small-timeline {
+    font-size: 0.6rem;
+  }
+
+  .more {
+    font-size: 0.7rem;
+    margin: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .nav-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-btn i {
+    font-size: 1.5rem;
+  }
+
+  .header-div {
+    width: 100%;
+  }
+
+  .header-title {
+    font-size: 1.5rem;
+  }
+
+  .header-description {
+    font-size: 0.9rem;
+  }
+
+  .offcanvas {
+    width: 100%;
+    background-color: #262626 !important;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.8rem;
+  }
+
+  .small-timeline {
+    font-size: 0.6rem;
+  }
+
+  .more {
+    font-size: 0.7rem;
+    margin: auto;
+  }
 }
