@@ -10,10 +10,10 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #1a1919 !important;
+  transition: 0.3s;
 }
 
 .header {
-  /* background-color: #262626; */
   background-image: url("assets/img/header-background.gif");
   background-position: center;
   background-repeat: no-repeat;
@@ -45,7 +45,6 @@ body {
 
 .header-div {
   position: absolute;
-  /* background-color: rgba(173, 255, 47, 0.3); */
   width: 60%;
   top: 50%;
   left: 50%;
@@ -65,42 +64,80 @@ body {
   font-size: 1.3rem;
 }
 
+.canvas-bg-color {
+  background-color: rgba(38, 38, 38, 0.9) !important;
+}
+
+.dropdown-menu {
+  background-color: transparent !important;
+}
+.dropdown-item {
+  transition: 0.2s;
+}
+.dropdown-item:hover {
+  color: #f1f1f1 !important;
+  background-color: #c58940 !important;
+}
+
 .main {
   height: 100%;
   margin: 50px auto 50px auto;
 }
 
-.card-col{
-    display: flex;
-    justify-content: center;
+.card-col {
+  display: flex;
+  justify-content: center;
 }
 
-.custom-card{
-    background-color: #262626 !important;
-    cursor: default;
+.custom-card {
+  background-color: #262626 !important;
+  cursor: default;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
 }
 
-.text-custom-color{
-    cursor: pointer;
-    color: #C58940;
-    font-weight: 500;
-    text-decoration: none;
+.text-custom-color {
+  cursor: pointer;
+  color: #c58940;
+  font-weight: 500;
+  text-decoration: none;
 }
 
-.text-custom-color:hover{
-    color: #C58940;
+.text-custom-color:hover {
+  color: #c58940;
 }
 
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #262626;
 }
 
-.social-link{
-    margin: auto;
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.social-link {
+  margin: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-link i {
+  color: #c58940;
+  font-size: 1.1rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #262626;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c58940;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c58940;
 }

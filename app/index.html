@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
         <!-- Animate.style -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <title>Blog</title>
+        <title>Murat Eren Nar | Blog</title>
     </head>
 
     <body>
@@ -22,40 +22,37 @@
             <nav class="navbar navbar-dark bg-transparent animate__fadeInDown">
                 <div class="container-fluid">
                     <h1 class="nav-title">Murat Eren Nar</h1>
-                    <button class="nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <button id="open" class="nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <i class="fa-solid fa-bars"></i>
                     </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas offcanvas-end canvas-bg-color" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">ARA</h5>
+                            <button id="close" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2 bg-transparent border-1 rounded-0 border-secondary text-light" type="search" placeholder="Ara..." aria-label="Search">
+                            </form>
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-4">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    <a class="nav-link" href="#"><i class="fa-solid fa-house me-3"></i>Ana Sayfa</a>
                                 </li>
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a class="nav-link" href="#">Link</a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Dropdown
+                                        <i class="fa-solid fa-list me-3"></i>Kategoriler
                                     </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark">
-                                        <li><a class="dropdown-item" href="#">Action</a></li>
-                                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <ul class="dropdown-menu border-0">
+                                        <li><a class="dropdown-item text-secondary" href="#">Tasarım</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Front-End</a></li>
+                                        <li><a class="dropdown-item text-secondary" href="#">Back-End</a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-success" type="submit">Search</button>
-                            </form>
+
                         </div>
                     </div>
                 </div>
@@ -69,20 +66,6 @@
 
         <main id="main" class="main">
             <div class="container cards-div">
-                <!-- <div class="row">
-                    <div class="col-sm-12 col-md-6 col-lg-6 d-flex card-col">
-                        <div class="card">
-                            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80" class="card-img-top img-fluid" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                     -->
-
-
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col-auto">
                         <div class="card h-100 border-0 rounded-0 custom-card text-white">
@@ -162,7 +145,7 @@
 
         </main>
 
-        <footer class="bg-dark text-light p-4 text-center footer">
+        <footer class="text-light p-4 text-center footer">
             <div class="social-link">
                 <a class="btn text-white" href=""><i class="fa-brands fa-github"></i></a>
                 <a class="btn text-white" href=""><i class="fa-solid fa-envelope"></i></a>
