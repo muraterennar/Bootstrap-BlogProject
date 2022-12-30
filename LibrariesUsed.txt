@@ -1,3 +1,4 @@
-- Bootstrap 5.2.3
-- Fontawesome
-- Photo : Unsplash
+- Bootstrap 5.2.3.
+- Fontawesome.
+- Photo : Unsplash.
+- Animate.css.
