@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
+@import url('../node_modules/animate.css/animate.min.css');
+
 * {
   margin: 0;
   padding: 0;
@@ -20,27 +22,11 @@ body {
   background-size: cover;
   width: 100%;
   height: 100vh;
+  cursor: default;
 }
 
-.nav-title {
-  margin-left: 3%;
-  font-weight: 400;
-  font-size: 1.7rem;
-  color: #f1f1f1;
-  text-decoration: none;
-}
-
-.nav-btn {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
-  border: none;
-  margin-right: 3%;
-}
-
-.nav-btn i {
-  color: #f1f1f1;
-  font-size: 1.6rem;
+.navbar{
+  transition: 0.3s;
 }
 
 .header-div {
@@ -64,20 +50,59 @@ body {
   font-size: 1.3rem;
 }
 
-.canvas-bg-color {
-  background-color: rgba(38, 38, 38, 0.9) !important;
+/* ============== Navbar ============== */
+
+.nav-title {
+  font-size: 1.5rem !important;
 }
 
-.dropdown-menu {
-  background-color: transparent !important;
+.nav-bars {
+  border: none !important;
+  box-shadow: none !important;
 }
-.dropdown-item {
-  transition: 0.2s;
+
+.nav-bars i {
+  color: #f1f1f1;
+  font-size: 1.5rem;
 }
-.dropdown-item:hover {
-  color: #f1f1f1 !important;
+
+.nav-item {
+  transition: 0.3s;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #f1f1f1;
+
+  margin-left: 10px;
+}
+
+.sidebar {
+  background-color: rgb(38, 38, 38) !important;
+}
+
+.dropdown-item,
+.dropdown-item li {
+  transition: 0.3s;
+}
+
+.dropdown-item:hover,
+.dropdown-item li {
   background-color: #c58940 !important;
+  color: #f1f1f1 !important;
+  margin-left: 10px;
 }
+
+.search-input {
+  border: #c58940 1px solid !important;
+  box-shadow: none !important;
+  text-align: center;
+  background-color: #262626 !important;
+  color: #f1f1f1 !important;
+}
+
+/* ============= Main ============= */
 
 .main {
   height: 100%;
@@ -93,6 +118,7 @@ body {
   background-color: #262626 !important;
   cursor: default;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  display: none;
 }
 
 .text-custom-color {
@@ -111,6 +137,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #262626;
+  cursor: default;
 }
 
 .social-link {
@@ -119,11 +146,49 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  transition: 0.3s;
 }
 
 .social-link i {
   color: #c58940;
   font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.social-link i:hover {
+  transform: scale(1.2);
+}
+
+/* ========= Up Row ========== */
+
+.up-row {
+  display: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: 90%;
+  right: 2%;
+}
+
+.up-row-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 2px;
+  height: 100%;
+  background-color: rgba(124, 124, 124, 0.6);
+  transition: 0.3s;
+}
+
+.up-row-link:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.up-row-link i {
+  font-size: 1.5rem;
+  color: #c58940;
 }
 
 /* ========= Scrollbar Desing ========= */

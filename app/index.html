@@ -16,39 +16,38 @@
         <title>Murat Eren Nar | Blog</title>
     </head>
 
-    <body>
+    <body id="body">
 
         <header id="header" class="header">
-            <nav class="navbar navbar-dark bg-transparent animate__fadeInDown">
+            <nav id="navbar" class="navbar navbar-dark ">
                 <div class="container-fluid">
-                    <h1 class="nav-title">Murat Eren Nar</h1>
-                    <button type="button" id="open" class="nav-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-                        <i class="fa-solid fa-bars"></i>
+                    <a class="navbar-brand nav-title animate__animated animate__fadeInDown" href="#">Murat Eren Nar</a>
+                    <button id="barsBtn" class="navbar-toggler nav-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fa-solid fa-bars animate__animated animate__fadeInDown"></i>
                     </button>
-                    <div class="offcanvas offcanvas-end canvas-bg-color" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">ARA</h5>
-                            <button id="close" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            <h5 class="offcanvas-title text-white " id="offcanvasDarkNavbarLabel" >Murat Eren Nar</h5>
+                            <button id="closeBtn" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2 bg-transparent border-1 rounded-0 border-secondary text-light" type="search" placeholder="Ara..." aria-label="Search">
+                            <form class="d-flex mb-3" role="search">
+                                <input class="form-control me-2 rounded-0 search-input" type="search" placeholder="Ara..." aria-label="Search">
+                                <!-- <button class="btn btn-success" type="submit">Ara</button> -->
                             </form>
-                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-4">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa-solid fa-house me-3"></i>Ana Sayfa</a>
+                                    <a class="nav-link" aria-current="page" href="#header" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">Ana Sayfa</a>
                                 </li>
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li> -->
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fa-solid fa-list me-3"></i>Kategoriler
+                                    <a class="nav-link dropdown-toggle" href="#header" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Kategoriler
                                     </a>
-                                    <ul class="dropdown-menu border-0">
-                                        <li><a class="dropdown-item text-secondary" href="#">Tasarım</a></li>
-                                        <li><a class="dropdown-item text-secondary" href="#">Front-End</a></li>
-                                        <li><a class="dropdown-item text-secondary" href="#">Back-End</a></li>
+                                    <ul class="dropdown-menu bg-transparent border-0">
+                                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"><a class="dropdown-item text-white" href="#">Front-end</a></li>
+                                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"><a class="dropdown-item text-white" href="#">Back-end</a></li>
+                                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"><a class="dropdown-item text-white" href="#">Tasarım</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -59,8 +58,8 @@
             </nav>
 
             <div class="header-div text-center">
-                <h2 class="header-title">Blog Sayfama Hoş Geldiniz</h2>
-                <p class="header-description">Bu sayfada halihazırda geliştirmekte olduğum projelerin aşama aşama geliştirme günlüklerini paylaşacağım</p>
+                <h2 class="header-title animate__animated animate__fadeInDown">Blog Sayfama Hoş Geldiniz</h2>
+                <p class="header-description animate__animated animate__fadeInDown">Bu sayfada halihazırda geliştirmekte olduğum projelerin aşama aşama geliştirme günlüklerini paylaşacağım</p>
             </div>
         </header>
 
@@ -68,7 +67,7 @@
             <div class="container cards-div">
                 <div class="row row-cols-1 row-cols-md-2 g-4">
                     <div class="col-auto">
-                        <div class="card h-100 border-0 rounded-0 custom-card text-white">
+                        <div id="card" class="card h-100 border-0 rounded-0 custom-card text-white">
                             <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
                                 class="card-img-top rounded-0 img-fluid" alt="...">
                             <div class="card-body">
@@ -76,8 +75,7 @@
                                 <h5 class="card-title mt-3">Card title</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
                                     maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
-                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
-                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                </p>
                                 <small class="text-muted small-timeline float-start">Last updated 3 mins ago</small>
                                 <a class="float-end text-custom-color more">Daha Falası İçin Tıkla...</a>
                             </div>
@@ -85,7 +83,7 @@
                     </div>
 
                     <div class="col-auto">
-                        <div class="card h-100 border-0 rounded-0 custom-card text-white">
+                        <div id="card-2" class="card h-100 border-0 rounded-0 custom-card text-white">
                             <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
                                 class="card-img-top rounded-0 img-fluid" alt="...">
                             <div class="card-body">
@@ -93,8 +91,7 @@
                                 <h5 class="card-title mt-3">Card title</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
                                     maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
-                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
-                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                </p>
                                 <small class="text-muted float-start small-timeline">Last updated 3 mins ago</small>
                                 <a class="float-end text-custom-color more">Daha Falası İçin Tıkla...</a>
                             </div>
@@ -102,7 +99,7 @@
                     </div>
 
                     <div class="col-auto">
-                        <div class="card h-100 border-0 rounded-0 custom-card text-white">
+                        <div id="card-3" class="card h-100 border-0 rounded-0 custom-card text-white">
                             <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
                                 class="card-img-top rounded-0 img-fluid" alt="...">
                             <div class="card-body">
@@ -110,8 +107,7 @@
                                 <h5 class="card-title mt-3">Card title</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
                                     maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
-                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
-                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                </p>
                                 <small class="text-muted float-start small-timeline more">Last updated 3 mins ago</small>
                                 <a class="float-end text-custom-color more">Daha Falası İçin Tıkla...</a>
                             </div>
@@ -119,7 +115,7 @@
                     </div>
 
                     <div class="col-auto">
-                        <div class="card border-0 rounded-0 custom-card text-white">
+                        <div id="card-4" class="card border-0 rounded-0 custom-card text-white">
                             <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=820&q=80"
                                 class="card-img-top rounded-0 img-fluid" alt="...">
                             <div class="card-body">
@@ -127,8 +123,7 @@
                                 <h5 class="card-title mt-3">Card title</h5>
                                 <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam debitis enim tempore velit suscipit non dolorum facere possimus placeat! Mollitia
                                     maiores libero laborum architecto, quisquam voluptatibus praesentium earum omnis beatae.
-                                    Fugiat ipsum neque animi itaque. Dolorum aperiam culpa mollitia dolorem quod consectetur nisi voluptatum, suscipit facilis enim consequatur iste a atque, tempore
-                                    odit quidem! Nihil itaque ea adipisci fugit asperiores.</p>
+                                    .</p>
                                 <small class="text-muted float-start small-timeline">Last updated 3 mins ago</small>
                                 <a class="float-end text-custom-color more">Daha Falası İçin Tıkla...</a>
                             </div>
@@ -136,14 +131,13 @@
                     </div>
                 </div>
             </div>
-            </div>
-
-
-
-            </div>
-
-
         </main>
+
+        <section id="up-row" class="up-row">
+            <a class="up-row-link" href="#header">
+                <i class="fa-sharp fa-solid fa-caret-up"></i>
+            </a>
+        </section>
 
         <footer class="text-light p-4 text-center footer">
             <div class="social-link">
