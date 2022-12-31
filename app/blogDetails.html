@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr-TR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+        <!-- Animate.style -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>Murat Eren Nar | Blog Details</title>
+    </head>
+
+    <body id="body">
+
+        <header id="header" class="header-blog-details">
+            <nav id="navbar" class="navbar navbar-dark ">
+                <div class="container-fluid">
+                    <a class="navbar-brand nav-title animate__animated animate__fadeInDown" href="#">Murat Eren Nar</a>
+                    <button id="barsBtn" class="navbar-toggler nav-bars" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <!-- <span class="navbar-toggler-icon"></span> -->
+                        <i class="fa-solid fa-bars animate__animated animate__fadeInDown"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end sidebar" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title text-white " id="offcanvasDarkNavbarLabel">Murat Eren Nar</h5>
+                            <button id="closeBtn" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <form class="d-flex mb-3" role="search">
+                                <input class="form-control me-2 rounded-0 search-input" type="search" placeholder="Ara..." aria-label="Search">
+                                <!-- <button class="btn btn-success" type="submit">Ara</button> -->
+                            </form>
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#header" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar">Ana Sayfa</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#header" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Kategoriler
+                                    </a>
+                                    <ul class="dropdown-menu bg-transparent border-0">
+                                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"><a class="dropdown-item text-white" href="#">Front-end</a></li>
+                                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"><a class="dropdown-item text-white" href="#">Back-end</a></li>
+                                        <li data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"><a class="dropdown-item text-white" href="#">Tasarım</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="header-div-bDetails text-center">
+                <!-- <img src="assets/img/header-background.jpg" class="img-fluid img-blog-details" alt=""> -->
+                <h2 class="header-title-bDetails animate__animated animate__fadeInDown">Blog Başlığı</h2>
+                <span class="header-category">Kategori</span>
+                <!-- <p class="header-description-bDetails animate__animated animate__fadeInDown">Bu sayfada halihazırda geliştirmekte olduğum projelerin aşama aşama geliştirme günlüklerini paylaşacağım</p> -->
+            </div>
+            k
+        </header>
+
+        <!-- Bootstrap Bundle JS -->
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Custom JS -->
+        <script src="script.js"></script>
+    </body>
+
+</html>

@@ -297,3 +297,38 @@ body {
     margin: auto;
   }
 }
+
+
+/* =============== BLOG DETAILS =============== */
+.header-blog-details{
+  background-color: #c58940;
+  height: 50vh;
+  width: 100%;
+  background-image: url('assets/img/header-background.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.header-div-bDetails {
+  position: absolute;
+  width: 60%;
+  top: 25vh;
+  left: 50%;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 999;
+}
+
+.header-title-bDetails {
+  color: #f1f1f1;
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.header-category{
+  color: #c58940;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
