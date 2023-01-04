@@ -9,7 +9,6 @@ const card4 = document.getElementById('card-4');
 
 let stickyBttom = header.offsetHeight;
 let stickCard = card.offsetTop - card.offsetHeight;
-let result = body.offsetTop- body.offsetHeight;
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > stickCard) {
